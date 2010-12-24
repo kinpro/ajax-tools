@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<!--[if IE]><![endif]-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>#{get 'title' /}</title>
+		<meta name="description" content="#{get 'description' /}">
+		<meta name="keywords" content="#{get 'keywords' /}">
+		<meta name="author" content="The Buzz Media, LLC">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="/public/css/style.css?v=1">
+		<link rel="stylesheet" href="/public/css/960.css?v=1">
+		<link rel="stylesheet" href="/public/css/ui-lightness/jquery-ui-1.8.4.custom.css?v=1">
+		<link rel="stylesheet" media="handheld" href="/public/css/handheld.css?v=1">
+		<script src="/public/scripts/modernizr-1.5.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script>!window.jQuery &&
+		document.write('<script src="/public/scripts/jquery-1.4.2.min.js"><\/script>')</script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
+		<script>!window.jQuery.ui &&
+		document.write('<script src="/public/scripts/jquery-ui-1.8.4.custom.min.js"><\/script>')</script>
+	</head>
+	<!--[if lt IE 7 ]>
+	<body class="ie6"> <![endif]-->
+	<!--[if IE 7 ]>
+	<body class="ie7"> <![endif]-->
+	<!--[if IE 8 ]>
+	<body class="ie8"> <![endif]-->
+	<!--[if IE 9 ]>
+	<body class="ie9"> <![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<body> <!--<![endif]-->
+		<div id="container" class="container_12">
+			<header class="grid_12 alpha omega">
+				<script type="text/javascript"><!--
+				google_ad_client = "pub-2567155360403634";
+				/* TBM, Tool Base64, 728x90, created 8/20/10 */
+				google_ad_slot = "6632264601";
+				google_ad_width = 728;
+				google_ad_height = 90;//-->
+				</script>
+				<script type="text/javascript"
+						src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>
+			</header>
+			<div class="clear"></div>
+			<div id="main" class="grid_12 alpha omega">
+				#{doLayout /}
+			</div>
+			<div class="clear"></div>
+			<footer class="grid_12 alpha omega">
+				<div id="copyright" class="alpha grid_12">
+					Copyright &copy; <a href="http://thebuzzmedia.com">The Buzz Media</a>, LLC
+				</div>
+				<div class="clear"></div>
+				<br/>
+				<div class="alpha grid_12">
+					<strong>Our Other Handy AJAX Utilities:</strong>
+					<ul style="list-style-type: none;">
+						<li><a href="/base64">Base64 Encoder &amp; Decoder</a></li>
+						<li><a href="/md5">MD5 Hash Generator</a></li>
+						<li><a href="/sha">SHA-1/256/384/512 Hash Generator</a></li>
+						<li><a href="/binary">Binary to Text / Text to Binary Converter</a></li>
+						<li>Password Generator (<em>Coming soon</em>)</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+		<!-- end of #container -->
+
+		<script src="/public/scripts/script.js?v=1"></script>
+		#{get 'extraScripts' /}
+		<script src="/public/scripts/plugins.js?v=1"></script>
+
+		<!--[if lt IE 7 ]>
+		<script src="/public/scripts/dd_belatedpng.js?v=1"></script>
+		<![endif]-->
+
+		<script type="text/javascript">
+			var clicky = { log: function() {
+				return;
+			}, goal: function() {
+				return;
+			}};
+			var clicky_site_id = 53682;
+			(function() {
+				var s = document.createElement('script');
+				s.type = 'text/javascript';
+				s.async = true;
+				s.src = ( document.location.protocol ==
+						'https:' ? 'https://static.getclicky.com/js' : 'http://static.getclicky.com/js' );
+				( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild(s);
+			})();
+		</script>
+		<a title="Web Statistics" href="http://getclicky.com/53682"></a>
+		<noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/53682ns.gif"/></p></noscript>
+	</body>
+</html>

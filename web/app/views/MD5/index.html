@@ -1,0 +1,39 @@
+#{extends 'template.html' /}
+#{set title:'AJAX MD5 Hash Generator Online Utility' /}
+#{set description:'Online AJAX MD5 hash generator utility for quickly generating MD5 hashes.' /}
+#{set keywords:'MD5, security, hash, generator, utility, online, instant, fast, AJAX' /}
+#{set extraScripts:'<script src="/public/scripts/md5.js?v=1"></script>' /}
+
+<div class="grid_12 alpha omega" style="margin-bottom: 0.5em;">
+	<span class="heading">AJAX MD5 Hash Generator</span>
+	<span style="float: right">Created by The Buzz Media, LLC</span>
+</div>
+<div id="tool">
+	<div id="tabs" class="grid_12 alpha omega">
+		<ul>
+			<li><a id="generateTab" href="#generate">Generate</a></li>
+		</ul>
+		<div id="generate">
+			<form id="generateForm">
+				<label for="decodeText">Paste Text Below:</label>
+				<div class="clear"></div>
+				<textarea id="decodeText" class="grid_11 alpha text" cols="1" rows="8"></textarea>
+				<div class="clear"></div>
+				<span class="pull_2" style="font-style: italic;padding-left: 1em;"><strong>Disclaimer</strong>: This application does not store or persist data in any way.</span>
+				<input class="grid_2 push_9" id="generateButton" type="submit" value="Generate MD5">
+				<div class="clear"></div>
+			</form>
+		</div>
+	</div>
+	<div id="result" class="grid_12 alpha omega ui-helper-hidden">
+		<div id="title" class="ui-state-highlight ui-corner-all alpha grid_5">
+			<span class="ui-icon ui-icon-check" style="float: left;margin-right: 0.5em;margin-top: 0.4em;"></span>
+			<span class="heading">Result</span>
+			<span style="float: right;margin-right: 2em;font-style:italic;">
+				<span id="resultSize"></span> characters (<span id="resultTiming"></span> ms)
+			</span>
+		</div>
+		<div class="clear"></div>
+		<textarea id="resultText" class="alpha grid_12" rows="1" cols="1"></textarea>
+	</div>
+</div>

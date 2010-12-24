@@ -9,12 +9,11 @@
 		<meta name="keywords" content="#{get 'keywords' /}">
 		<meta name="author" content="The Buzz Media, LLC">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-		<link rel="shortcut icon" href="/favicon.ico">
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		<link rel="stylesheet" href="/public/css/style.css?v=1">
 		<link rel="stylesheet" href="/public/css/960.css?v=1">
 		<link rel="stylesheet" href="/public/css/ui-lightness/jquery-ui-1.8.4.custom.css?v=1">
 		<link rel="stylesheet" media="handheld" href="/public/css/handheld.css?v=1">
+		<link rel="shortcut icon" href="http://www.thebuzzmedia.com/wp-content/uploads/2010/05/favicon.png"/>
 		<script src="/public/scripts/modernizr-1.5.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 		<script>!window.jQuery &&
@@ -53,7 +52,7 @@
 			<div class="clear"></div>
 			<footer class="grid_12 alpha omega">
 				<div id="copyright" class="alpha grid_12">
-					Copyright &copy; <a href="http://thebuzzmedia.com">The Buzz Media</a>, LLC
+					&copy; 2010 <a href="http://thebuzzmedia.com/software">The Buzz Media</a><span style="margin-left: 2em;" />(Source Available at <a href="https://github.com/thebuzzmedia/ajax-tools">GitHub</a>)
 				</div>
 				<div class="clear"></div>
 				<br/>
@@ -80,22 +79,17 @@
 		<![endif]-->
 
 		<script type="text/javascript">
-			var clicky = { log: function() {
-				return;
-			}, goal: function() {
-				return;
-			}};
-			var clicky_site_id = 53682;
-			(function() {
-				var s = document.createElement('script');
-				s.type = 'text/javascript';
-				s.async = true;
-				s.src = ( document.location.protocol ==
-						'https:' ? 'https://static.getclicky.com/js' : 'http://static.getclicky.com/js' );
-				( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild(s);
-			})();
+		var clicky = { log: function(){ return; }, goal: function(){ return; }};
+		var clicky_site_id = 66362129;
+		(function() {
+		  var s = document.createElement('script');
+		  s.type = 'text/javascript';
+		  s.async = true;
+		  s.src = ( document.location.protocol == 'https:' ? 'https://static.getclicky.com/js' : 'http://static.getclicky.com/js' );
+		  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+		})();
 		</script>
-		<a title="Web Statistics" href="http://getclicky.com/53682"></a>
-		<noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/53682ns.gif"/></p></noscript>
+		<a title="Real Time Web Analytics" href="http://getclicky.com/66362129"></a>
+		<noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/66362129ns.gif" /></p></noscript>
 	</body>
 </html>

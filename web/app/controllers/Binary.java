@@ -15,10 +15,9 @@ public class Binary extends Controller {
 
 	public static void binaryToText(Byte endian, String binary) {
 		if (binary != null && binary.length() > 0) {
-			// Remove spaces if there are any
-			if(binary.indexOf(' ') != -1) {
-				binary = binary.replaceAll(" ", "");
-			}
+			// Remove all whitespace without asking; the operation is fast
+			// enough that we don't need to waste time checking.
+			binary = binary.replaceAll("\\s", "");
 
 			byte[] result = BINARY_CODEC.toByteArray(binary);
 

@@ -1,0 +1,44 @@
+#{extends 'template.html' /}
+#{set title:'AJAX Character Counter Online Utility' /}
+#{set description:'Online AJAX utility used for counting characters in a run of text.' /}
+#{set keywords:'char count, text count, character count, utility, online, instant, fast, AJAX' /}
+#{set extraScripts:'<script src="/public/scripts/charcount.js?v=1"></script>' /}
+
+<div class="grid_12 alpha omega" style="margin-bottom: 0.5em;">
+	<span class="heading">AJAX Text Character Counter</span>
+</div>
+<div id="tool">
+	<div id="tabs" class="grid_12 alpha omega">
+		<ul>
+			<li><a id="countTab" href="#count">Count</a></li>
+		</ul>
+		<div id="count">
+			<form id="countForm">
+				<label for="countText">Paste Text Below:</label>
+				<span class="optionsPanel">
+					<input type="checkbox" checked="checked" id="includeSpaces" name="spaces" />
+					<label for="includeSpaces">Include Spaces</label>&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" checked="checked" id="includeNewlines" name="newlines" />
+					<label for="includeNewlines">Include Newlines</label>&nbsp;&nbsp;&nbsp;&nbsp;
+				</span>
+				<div class="clear"></div>
+				<textarea id="countText" class="grid_11 alpha text" cols="1" rows="8"></textarea>
+				<div class="clear"></div>
+				<span class="pull_2" style="font-style: italic;padding-left: 1em;"><strong>Disclaimer</strong>: This application does not store or persist data in any way.</span>
+				<input class="grid_2 push_9" id="countButton" type="submit" value="Count Characters">
+				<div class="clear"></div>
+			</form>
+		</div>
+	</div>
+	<div id="result" class="grid_12 alpha omega ui-helper-hidden">
+		<div id="title" class="ui-state-highlight ui-corner-all alpha grid_5">
+			<span class="ui-icon ui-icon-check" style="float: left;margin-right: 0.5em;margin-top: 0.4em;"></span>
+			<span class="heading">Result</span>
+			<span style="float: right;margin-right: 2em;font-style:italic;">
+				<span id="resultText"></span> characters (<span id="resultTiming"></span> ms)
+			</span>
+		</div>
+		<!-- <div class="clear"></div>
+		<textarea id="resultText" class="alpha grid_12" rows="1" cols="1"></textarea>-->
+	</div>
+</div>

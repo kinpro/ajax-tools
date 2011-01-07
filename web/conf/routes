@@ -16,6 +16,8 @@ GET		/md5									MD5.index
 POST	/md5/generate							MD5.generate
 GET		/sha									SHA.index
 POST	/sha/generate							SHA.generate
+GET		/charcount								CharCount.index
+POST	/charcount/count						CharCount.count
 
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public

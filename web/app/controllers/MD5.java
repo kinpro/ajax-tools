@@ -1,10 +1,8 @@
 package controllers;
 
 import org.apache.commons.codec.digest.DigestUtils;
-import play.mvc.Controller;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
+import play.mvc.Controller;
 
 public class MD5 extends Controller {
 	public static void index() {

@@ -1,6 +1,5 @@
 package controllers;
 
-import org.apache.commons.codec.binary.Base64;
 import play.mvc.Controller;
 
 public class Application extends Controller {

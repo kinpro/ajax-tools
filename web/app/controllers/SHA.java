@@ -1,6 +1,7 @@
 package controllers;
 
 import org.apache.commons.codec.digest.DigestUtils;
+
 import play.mvc.Controller;
 
 public class SHA extends Controller {

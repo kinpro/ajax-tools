@@ -2,7 +2,7 @@ package controllers;
 
 import org.apache.commons.codec.binary.BinaryCodec;
 import org.apache.commons.lang.ArrayUtils;
-import org.apache.commons.lang.StringUtils;
+
 import play.mvc.Controller;
 
 public class Binary extends Controller {

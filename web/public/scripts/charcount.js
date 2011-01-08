@@ -29,11 +29,15 @@ function submitCount(includeSpaces, includeNewlines, text) {
 
 	$.ajax({
 		type: "POST",
-		data: "includeSpaces=" + includeSpaces + "&includeNewlines=" + includeNewlines + "&text=" + text,
+		data: ({includeSpaces: includeSpaces, includeNewlines: includeNewlines, text: text}),
 		url: "/charcount/count",
 		success: function(data, textStatus, XMLHttpRequest) {
-			$("#resultText").text(data);
-			//$("#resultSize").text(data.length);
+			var results = data.split(',');
+			
+			$("#resultText").text(results[0]);
+			$("#resultSpaces").text(results[1]);
+			$("#resultNewlines").text(results[2]);
+			
 			$("#resultTiming").text(new Date().getTime() - startTime);
 			$("#result").fadeIn();
 		}

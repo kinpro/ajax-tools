@@ -1,53 +1,51 @@
 #{extends 'template.html' /}
-#{set title:'AJAX Text to Binary Online Converter' /}
-#{set description:'Online AJAX converter for quickly converting Text to Binary or Binary to Text.' /}
-#{set keywords:'binary, text, binary conversion, text conversion, AJAX, online, utility, instant, fast' /}
-#{set extraScripts:'<script src="/public/scripts/binary.js?v=1"></script>' /}
+#{set title:'AJAX Byte to Char Online Converter' /}
+#{set description:'Online AJAX converter for quickly converting Bytes to Chars and Chars to Bytes.' /}
+#{set keywords:'byte, char, byte conversion, char conversion, byte to char, char to byte, number conversion, AJAX, online, utility, instant, fast' /}
+#{set extraScripts:'<script src="/public/scripts/bytechar.js?v=1"></script>' /}
 
 <div class="grid_12 alpha omega" style="margin-bottom: 0.5em;">
-	<span class="heading">AJAX Text/Binary Converter</span>
+	<span class="heading">AJAX Byte/Char Converter</span>
 </div>
 <div id="tool">
 	<div id="tabs" class="grid_12 alpha omega">
 		<ul>
-			<li><a id="decodeTab" href="#b2t">Binary to Text</a></li>
-			<li><a id="encodeTab" href="#t2b">Text to Binary</a></li>
+			<li><a id="byteToCharTab" href="#b2c">Byte to Char</a></li>
+			<li><a id="charToByteTab" href="#c2b">Char to Byte</a></li>
 		</ul>
-		<div id="b2t">
-			<form id="b2tForm">
-				<label for="decodeText">Paste Binary Text Below:</label>
-				<span class="optionsPanel">
+		<div id="b2c">
+			<form id="b2cForm">
+				<label for="byteText">Paste Byte Values Below (Space or comma separated):</label>
+				<!-- <span class="optionsPanel">
 					<label><a href="http://en.wikipedia.org/wiki/Endianness" target="_blank">Endian</a>: </label>
 					<input type="radio" id="endianBig1" name="endian" value="0" checked />
 					<label for="endianBig1">Big</label>&nbsp;
 					<input type="radio" id="endianLittle1" name="endian" value="1" />
 					<label for="endianLittle1">Little</label>&nbsp;
-				</span>
+				</span> -->
 				<div class="clear"></div>
-				<textarea id="decodeText" class="grid_11 alpha text" cols="1" rows="8"></textarea>
+				<textarea id="byteText" class="grid_11 alpha text" cols="1" rows="8"></textarea>
 				<div class="clear"></div>
 				<span class="pull_2" style="font-style: italic;padding-left: 1em;"><strong>Disclaimer</strong>: This application does not store or persist data in any way.</span>
-				<input class="grid_2 push_9" id="decodeButton" type="submit" value="Decode to Text">
+				<input class="grid_2 push_9" id="byteToCharButton" type="submit" value="Convert to Chars">
 				<div class="clear"></div>
 			</form>
 		</div>
-		<div id="t2b">
-			<form id="t2bForm">
-				<label for="encodeText">Paste Text Below:</label>
+		<div id="c2b">
+			<form id="c2bForm">
+				<label for="charText">Paste Chars (Text) Below:</label>
 				<span class="optionsPanel">
-					<input type="checkbox" id="includeSpaces" name="spaces" />
-					<label for="includeSpaces">Spaces in Output</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<label><a href="http://en.wikipedia.org/wiki/Endianness" target="_blank">Endian</a>: </label>
-					<input type="radio" id="endianBig2" name="endian" value="0" checked />
-					<label for="endianBig2">Big</label>&nbsp;
-					<input type="radio" id="endianLittle2" name="endian" value="1" />
-					<label for="endianLittle2">Little</label>
+					<label>Separators in Output: </label>
+					<input type="radio" name="separator" id="comma" value="0" checked />
+					<label for="comma">Commas</label>&nbsp;
+					<input type="radio" name="separator" id="space" value="1" />
+					<label for="space">Spaces</label>
 				</span>
 				<div class="clear"></div>
-				<textarea id="encodeText" class="grid_11 alpha text" cols="1" rows="8"></textarea>
+				<textarea id="charText" class="grid_11 alpha text" cols="1" rows="8"></textarea>
 				<div class="clear"></div>
 				<span class="pull_2" style="font-style: italic;padding-left: 1em;"><strong>Disclaimer</strong>: This application does not store or persist data in any way.</span>
-				<input class="grid_2 push_9" id="encodeButton" type="submit" value="Encode to Binary">
+				<input class="grid_2 push_9" id="charToByteButton" type="submit" value="Convert to Bytes">
 				<div class="clear"></div>
 			</form>
 		</div>

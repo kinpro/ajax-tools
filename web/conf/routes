@@ -12,6 +12,9 @@ POST	/base64/encode							Base64.encode
 GET		/binary									Binary.index
 POST	/binary/decode							Binary.binaryToText
 POST	/binary/encode							Binary.textToBinary
+GET		/bytechar								ByteChar.index
+POST	/bytechar/byteToChar					ByteChar.byteToChar
+POST	/bytechar/charToByte					ByteChar.charToByte
 GET		/md5									MD5.index
 POST	/md5/generate							MD5.generate
 GET		/sha									SHA.index

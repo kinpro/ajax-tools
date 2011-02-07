@@ -103,6 +103,23 @@ footer {
 	text-align: center;
 }
 
+footer ul li {
+	font-size: 105%;
+	width: 350px;
+	margin: 0.5em auto;
+	padding: 0.25em 0;
+	background-color: #F7FDEB;
+	border: 1px solid #EFEFEF;
+}
+
+footer ul li a {
+	text-decoration: none;
+}
+
+footer ul li:hover {
+	background-color: #FFECF3;
+}
+
 DIV#main {
 	margin-top: 2em;
 }
